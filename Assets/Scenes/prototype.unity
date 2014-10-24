@@ -13,12 +13,12 @@ SceneSettings:
 --- !u!104 &2
 RenderSettings:
   m_Fog: 1
-  m_FogColor: {r: .87843138, g: .870588243, b: .835294127, a: 1}
+  m_FogColor: {r: .713725507, g: .796078444, b: .811764717, a: 1}
   m_FogMode: 3
   m_FogDensity: .00499999989
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientLight: {r: .184313729, g: .184313729, b: .184313729, a: 1}
+  m_AmbientLight: {r: .246828154, g: .28739965, b: .294117659, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: a2126534b3a11b34e977105bd9e3cc03, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
@@ -1550,7 +1550,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .835294127, g: .870588243, b: .866666675, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1584,7 +1584,7 @@ Transform:
   m_GameObject: {fileID: 1327574036}
   m_LocalRotation: {x: -1.22413823e-07, y: .615395844, z: -.733400166, w: .288811862}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .999999762, y: .999999881, z: .99999994}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1495508002}
   m_RootOrder: 0
@@ -2277,7 +2277,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .835294127, g: .870588243, b: .866666675, a: 1}
   m_Intensity: .5
   m_Range: 10
   m_SpotAngle: 30
@@ -2310,8 +2310,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2035989429}
   m_LocalRotation: {x: .739534497, y: -.626348615, z: .226733655, w: -.0967889279}
-  m_LocalPosition: {x: -2.94780675e-05, y: -3.29594612, z: 3.92798162}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1495508002}
   m_RootOrder: 1
@@ -2408,7 +2408,7 @@ Transform:
   m_GameObject: {fileID: 2118091430}
   m_LocalRotation: {x: .378990024, y: .00702101877, z: -.385718316, w: -.841153264}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1495508002}
   m_RootOrder: 2
@@ -2421,7 +2421,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .835294127, g: .870588243, b: .866666675, a: 1}
   m_Intensity: .5
   m_Range: 10
   m_SpotAngle: 30
