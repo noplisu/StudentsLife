@@ -24,12 +24,12 @@ public class ClockManager : MonoBehaviour {
 		}
 	}
 
-	int Hour()
+	public int Hour()
 	{
 		return 23 - Mathf.FloorToInt (time.HoursRemaining() % 24);
 	}
 
-	int Minutes()
+	public int Minutes()
 	{
 		float hours = time.HoursRemaining ();
 		float hourFraction = hours - Mathf.Floor(hours);
@@ -38,6 +38,7 @@ public class ClockManager : MonoBehaviour {
 
 	public string Time()
 	{
+
 		return string.Format("{0}:{1}", Hour(), Minutes());
 	}
 }
