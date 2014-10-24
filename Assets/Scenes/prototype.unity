@@ -12,14 +12,14 @@ SceneSettings:
     backfaceThreshold: 100
 --- !u!104 &2
 RenderSettings:
-  m_Fog: 0
-  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: .87843138, g: .870588243, b: .835294127, a: 1}
   m_FogMode: 3
-  m_FogDensity: .00999999978
+  m_FogDensity: .00499999989
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_AmbientLight: {r: .184313729, g: .184313729, b: .184313729, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: a2126534b3a11b34e977105bd9e3cc03, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -387,7 +387,7 @@ Transform:
   - {fileID: 614986631}
   - {fileID: 751690906}
   m_Father: {fileID: 273172594}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1 &267265469
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,10 +454,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 40, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1667783363}
   - {fileID: 153666212}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &374070527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,7 +1127,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 273172594}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1136,7 +1135,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .590120077
+      value: 40.5901184
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1148,7 +1147,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -.641650319
+      value: .694658458
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalRotation.z
@@ -1156,7 +1155,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -.766997337
+      value: -.719339728
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_RootOrder
@@ -1391,7 +1390,7 @@ Transform:
   - {fileID: 1495508002}
   - {fileID: 1199481108}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1 &1199481107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1990,13 +1989,13 @@ Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
   m_PrefabInternal: {fileID: 936438130}
   m_GameObject: {fileID: 1667783362}
-  m_LocalRotation: {x: 0, y: -.641650319, z: 0, w: -.766997337}
-  m_LocalPosition: {x: -7.07980347, y: .590120077, z: -.155151367}
+  m_LocalRotation: {x: 0, y: .694658458, z: 0, w: -.719339728}
+  m_LocalPosition: {x: -7.07980347, y: 40.5901184, z: -.155151367}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1026935168}
   - {fileID: 2145321916}
-  m_Father: {fileID: 273172594}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!114 &1667783364
 MonoBehaviour:
@@ -2461,7 +2460,6 @@ GameObject:
   - 124: {fileID: 2145321919}
   - 114: {fileID: 2145321918}
   - 81: {fileID: 2145321917}
-  - 45: {fileID: 2145321922}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2557,11 +2555,3 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
---- !u!45 &2145321922
-Skybox:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2145321915}
-  m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: a2126534b3a11b34e977105bd9e3cc03, type: 2}
