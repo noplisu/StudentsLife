@@ -514,8 +514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 708f68bff1b2f104f9c7b03c8ab6e19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-=======
   clocks:
   - {fileID: 834470561}
 --- !u!222 &275676420
@@ -535,7 +533,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 708f68bff1b2f104f9c7b03c8ab6e19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
->>>>>>> origin/master
   clocks: []
 --- !u!1 &374070527
 GameObject:
