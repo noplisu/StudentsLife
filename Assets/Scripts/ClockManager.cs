@@ -6,6 +6,8 @@ public class ClockManager : MonoBehaviour {
 
 	TimeManager time;
 
+	string[] Days = { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" };
+
 	int startHour = 0;
 	int startMinute = 0;
 
@@ -38,7 +40,21 @@ public class ClockManager : MonoBehaviour {
 
 	public string Time()
 	{
+		float minutes = Minutes();
+		string minutesString;
+		if (minutes < 10) 
+		{
+			minutesString = "0" + minutes.ToString ();
+		}
+		else 
+		{
+			minutesString = minutes.ToString ();
+		}
+		return string.Format("{2} {0}:{1}", Hour(), minutesString, DayOfWeek());
+	}
 
-		return string.Format("{0}:{1}", Hour(), Minutes());
+	public string DayOfWeek()
+	{
+		return Days[time.DayOfWeek()];
 	}
 }
