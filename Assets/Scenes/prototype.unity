@@ -488,6 +488,7 @@ MonoBehaviour:
   Semesters: 7
   weeksPerSemester: 3
   daysPerWeek: 7
+  hours: 3528
 --- !u!4 &275676418
 Transform:
   m_ObjectHideFlags: 0
@@ -511,6 +512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 708f68bff1b2f104f9c7b03c8ab6e19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clocks: []
 --- !u!1 &374070527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,6 +1217,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
   m_RootGameObject: {fileID: 1667783362}
@@ -1231,6 +1241,8 @@ GameObject:
   - 33: {fileID: 1000013508}
   - 65: {fileID: 1000013507}
   - 23: {fileID: 1000013506}
+  - 54: {fileID: 1000013510}
+  - 114: {fileID: 1000013511}
   m_Layer: 0
   m_Name: Wardrobe
   m_TagString: Untagged
@@ -1289,6 +1301,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 153666212}
   m_RootOrder: 1
+--- !u!54 &1000013510
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1000013505}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1000013511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1000013505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad794677c737ebc4595370c806096c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1026935165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,6 +1889,7 @@ GameObject:
   - 33: {fileID: 1558807762}
   - 65: {fileID: 1558807761}
   - 23: {fileID: 1558807760}
+  - 54: {fileID: 1558807764}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -1909,6 +1948,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 153666212}
   m_RootOrder: 8
+--- !u!54 &1558807764
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1558807759}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1579234742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,6 +1974,7 @@ GameObject:
   - 33: {fileID: 1579234745}
   - 65: {fileID: 1579234744}
   - 23: {fileID: 1579234743}
+  - 54: {fileID: 1579234747}
   m_Layer: 0
   m_Name: Desk
   m_TagString: Untagged
@@ -1978,6 +2033,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 153666212}
   m_RootOrder: 0
+--- !u!54 &1579234747
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1579234742}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1581313275
 GameObject:
   m_ObjectHideFlags: 0
@@ -2130,8 +2200,8 @@ GameObject:
   - 114: {fileID: 1667783364}
   - 95: {fileID: 1667783368}
   m_Layer: 0
-  m_Name: First Person Controller
-  m_TagString: Untagged
+  m_Name: Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2613,6 +2683,7 @@ GameObject:
   - 124: {fileID: 2145321919}
   - 114: {fileID: 2145321918}
   - 81: {fileID: 2145321917}
+  - 114: {fileID: 2145321922}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2708,3 +2779,16 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+--- !u!114 &2145321922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2145321915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664bc4a0d69803e46aa5ab6f13ab3766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxAngle: 60
+  maxDistance: 4.5
