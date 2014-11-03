@@ -679,7 +679,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: hips
-      position: {x: -0, y: .902499974, z: .00639999984}
+      position: {x: -0, y: .902500033, z: .0064000003}
       rotation: {x: -.0708255321, y: 0, z: -0, w: .997488737}
       scale: {x: 1, y: 1, z: .999999702}
       transformModified: 1
@@ -689,12 +689,12 @@ ModelImporter:
       scale: {x: 1, y: .99999994, z: 1}
       transformModified: 1
     - name: spine-1
-      position: {x: -0, y: .0299999993, z: 0}
+      position: {x: -0, y: .0300000012, z: 0}
       rotation: {x: 5.5664201e-10, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1.00000012, z: 1}
       transformModified: 1
     - name: chest
-      position: {x: -0, y: .0299999993, z: 0}
+      position: {x: -0, y: .0300000012, z: 0}
       rotation: {x: -.0481516197, y: .0344765373, z: .0383300297, w: .997508705}
       scale: {x: .999999821, y: 1, z: 1.00000024}
       transformModified: 1
@@ -704,12 +704,12 @@ ModelImporter:
       scale: {x: 1.00000012, y: .999999762, z: 1}
       transformModified: 1
     - name: clavicle.L
-      position: {x: -.0222999994, y: .150999993, z: .060899999}
+      position: {x: -.0222999994, y: .150999993, z: .0609000027}
       rotation: {x: -.515267134, y: .539937139, z: .390078813, w: .5392645}
       scale: {x: .99999994, y: .99999994, z: .999999881}
       transformModified: 1
     - name: deltoid.L
-      position: {x: -0, y: .110100001, z: 0}
+      position: {x: -0, y: .110100009, z: 0}
       rotation: {x: .435728461, y: -.343139797, z: .284367144, w: -.782004654}
       scale: {x: .999999881, y: .99999994, z: 1.00000024}
       transformModified: 1
@@ -719,7 +719,7 @@ ModelImporter:
       scale: {x: .999999762, y: 1.0000006, z: 1.00000012}
       transformModified: 1
     - name: forearm.L
-      position: {x: -0, y: .243300006, z: 0}
+      position: {x: -0, y: .243300021, z: 0}
       rotation: {x: .0258867685, y: .00888042338, z: -.0209711865, w: .999405503}
       scale: {x: .999999762, y: .999999404, z: 1.00000012}
       transformModified: 1
@@ -729,7 +729,7 @@ ModelImporter:
       scale: {x: 1, y: .999999821, z: .99999994}
       transformModified: 1
     - name: palm_index.L
-      position: {x: .0105999997, y: .0344000012, z: .000199999995}
+      position: {x: .0105999997, y: .0344000012, z: .000200000009}
       rotation: {x: -.072273016, y: -.175842524, z: -.0902842805, w: .977601588}
       scale: {x: .999999881, y: .999999881, z: 1.00000024}
       transformModified: 1
@@ -739,12 +739,12 @@ ModelImporter:
       scale: {x: 1, y: 1.00000024, z: 1.00000012}
       transformModified: 1
     - name: f_index.02.L
-      position: {x: -0, y: .0303000007, z: 0}
+      position: {x: -0, y: .0303000025, z: 0}
       rotation: {x: .0384820811, y: -.00477201678, z: .00071832136, w: .99924767}
       scale: {x: .999999821, y: .999999642, z: .999999642}
       transformModified: 1
     - name: f_index.03.L
-      position: {x: -0, y: .0271000005, z: 0}
+      position: {x: -0, y: .0271000024, z: 0}
       rotation: {x: .0153718274, y: .00894952193, z: -.0048060366, w: .999830306}
       scale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
       transformModified: 1
@@ -774,7 +774,7 @@ ModelImporter:
       scale: {x: .999999583, y: 1.00000036, z: 1.00000012}
       transformModified: 1
     - name: f_pinky.01.L
-      position: {x: -0, y: .0560999997, z: 0}
+      position: {x: -0, y: .0561000034, z: 0}
       rotation: {x: .0381746143, y: .0393858254, z: -.249221221, w: .966892064}
       scale: {x: 1, y: .999999762, z: 1}
       transformModified: 1
@@ -819,17 +819,17 @@ ModelImporter:
       scale: {x: .999999881, y: .999999881, z: .999999821}
       transformModified: 1
     - name: thumb.03.L
-      position: {x: -0, y: .0423000008, z: 0}
+      position: {x: -0, y: .0423000045, z: 0}
       rotation: {x: .0363780186, y: .00484152604, z: -.000902264728, w: .999325991}
       scale: {x: 1, y: .99999994, z: .999999821}
       transformModified: 1
     - name: clavicle.R
-      position: {x: .0222999994, y: .150999993, z: .060899999}
+      position: {x: .0222999994, y: .150999993, z: .0609000027}
       rotation: {x: -.515267134, y: -.539937139, z: -.390078813, w: .5392645}
       scale: {x: 1, y: .99999994, z: 1.00000036}
       transformModified: 1
     - name: deltoid.R
-      position: {x: -0, y: .110100001, z: 0}
+      position: {x: -0, y: .110100009, z: 0}
       rotation: {x: .435728401, y: .343139797, z: -.284367144, w: -.782004654}
       scale: {x: 1.00000012, y: .999999762, z: 1}
       transformModified: 1
@@ -839,7 +839,7 @@ ModelImporter:
       scale: {x: 1, y: 1.00000012, z: 1.0000006}
       transformModified: 1
     - name: forearm.R
-      position: {x: -0, y: .243300006, z: 0}
+      position: {x: -0, y: .243300021, z: 0}
       rotation: {x: .0258865096, y: -.00888053235, z: .020971451, w: .999405503}
       scale: {x: .999999821, y: .999999583, z: 1.00000048}
       transformModified: 1
@@ -849,7 +849,7 @@ ModelImporter:
       scale: {x: .999999881, y: 1.00000012, z: .99999994}
       transformModified: 1
     - name: palm_index.R
-      position: {x: -.0105999997, y: .0344000012, z: .000199999995}
+      position: {x: -.0105999997, y: .0344000012, z: .000200000009}
       rotation: {x: -.0722730607, y: .175842449, z: .0902842358, w: .977601588}
       scale: {x: 1.00000024, y: .999999583, z: 1}
       transformModified: 1
@@ -859,12 +859,12 @@ ModelImporter:
       scale: {x: 1, y: 1.00000036, z: 1.00000012}
       transformModified: 1
     - name: f_index.02.R
-      position: {x: -0, y: .0303000007, z: 0}
+      position: {x: -0, y: .0303000025, z: 0}
       rotation: {x: .0384840108, y: .00477207452, z: -.000719340343, w: .999247611}
       scale: {x: 1.00000024, y: 1.00000012, z: 1.00000012}
       transformModified: 1
     - name: f_index.03.R
-      position: {x: -0, y: .0271000005, z: 0}
+      position: {x: -0, y: .0271000024, z: 0}
       rotation: {x: .0153718358, y: -.00894962344, z: .00480592716, w: .999830246}
       scale: {x: .999999762, y: 1.00000012, z: .999999881}
       transformModified: 1
@@ -909,7 +909,7 @@ ModelImporter:
       scale: {x: .99999994, y: 1, z: 1.00000012}
       transformModified: 1
     - name: palm_ring.R
-      position: {x: .0161000006, y: .0368999988, z: -.00329999998}
+      position: {x: .0161000006, y: .0368999988, z: -.00330000021}
       rotation: {x: -.0934647992, y: .026592005, z: -.0504869558, w: .99398613}
       scale: {x: .999999642, y: .999999881, z: 1.00000012}
       transformModified: 1
@@ -939,7 +939,7 @@ ModelImporter:
       scale: {x: 1, y: .999999762, z: .999999702}
       transformModified: 1
     - name: thumb.03.R
-      position: {x: -0, y: .0423000008, z: 0}
+      position: {x: -0, y: .0423000045, z: 0}
       rotation: {x: .0363810956, y: -.00487385178, z: .000937845907, w: .999325693}
       scale: {x: 1.00000012, y: 1.00000012, z: .99999994}
       transformModified: 1
@@ -954,12 +954,12 @@ ModelImporter:
       scale: {x: 1, y: 1.00000072, z: .999999881}
       transformModified: 1
     - name: eye.L
-      position: {x: -.0303000007, y: .0302000009, z: .119800001}
+      position: {x: -.0303000025, y: .0302000027, z: .119800009}
       rotation: {x: .696671665, y: -.274490178, z: -.221527621, w: .624683321}
       scale: {x: .99999994, y: .999999642, z: .999999821}
       transformModified: 1
     - name: eye.R
-      position: {x: .0303000007, y: .0302000009, z: .119800001}
+      position: {x: .0303000025, y: .0302000027, z: .119800009}
       rotation: {x: .696719825, y: .274353862, z: .221378908, w: .62474227}
       scale: {x: 1.00000012, y: .999999881, z: .99999994}
       transformModified: 1
@@ -974,7 +974,7 @@ ModelImporter:
       scale: {x: 1, y: .99999994, z: 1}
       transformModified: 1
     - name: tongue_mid
-      position: {x: -0, y: .0300999992, z: 0}
+      position: {x: -0, y: .030100001, z: 0}
       rotation: {x: .0731024072, y: -1.14148535e-09, z: 6.69161532e-11, w: .997324467}
       scale: {x: 1, y: 1.00000024, z: 1.00000012}
       transformModified: 1
@@ -984,27 +984,27 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1.00000024}
       transformModified: 1
     - name: lolid.L
-      position: {x: -.0317000002, y: .0302000009, z: .119800001}
+      position: {x: -.0317000002, y: .0302000027, z: .119800009}
       rotation: {x: .847936153, y: -4.80309847e-10, z: 2.02784256e-09, w: .530098498}
       scale: {x: 1, y: .999999881, z: 1.00000012}
       transformModified: 1
     - name: lolid.R
-      position: {x: .0317000002, y: .0302000009, z: .119800001}
+      position: {x: .0317000002, y: .0302000027, z: .119800009}
       rotation: {x: .847936153, y: -4.80309847e-10, z: 2.02784256e-09, w: .530098498}
       scale: {x: 1, y: .999999881, z: 1.00000012}
       transformModified: 1
     - name: uplid.L
-      position: {x: -.0313000008, y: .0302000009, z: .119800001}
+      position: {x: -.0313000008, y: .0302000027, z: .119800009}
       rotation: {x: .652780175, y: -1.05961762e-09, z: 1.7944507e-09, w: .757547379}
       scale: {x: 1, y: 1, z: 1.00000012}
       transformModified: 1
     - name: uplid.R
-      position: {x: .0310999993, y: .0302000009, z: .119800001}
+      position: {x: .0310999993, y: .0302000027, z: .119800009}
       rotation: {x: .641664207, y: -1.08567189e-09, z: 1.77880866e-09, w: .766985774}
       scale: {x: 1, y: 1.00000012, z: 1.00000012}
       transformModified: 1
     - name: thigh.L
-      position: {x: -.107000001, y: -.000600000028, z: -.0102000004}
+      position: {x: -.107000008, y: -.000600000028, z: -.0102000004}
       rotation: {x: .99821192, y: -.0499110334, z: -.0242541488, w: -.0222165883}
       scale: {x: 1.00000012, y: 1, z: 1.00000024}
       transformModified: 1
@@ -1024,7 +1024,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: thigh.R
-      position: {x: .107000001, y: -.000600000028, z: -.0102000004}
+      position: {x: .107000008, y: -.000600000028, z: -.0102000004}
       rotation: {x: .99821192, y: .0499110334, z: .0242541488, w: -.0222165883}
       scale: {x: 1.00000012, y: 1, z: 1.00000024}
       transformModified: 1
