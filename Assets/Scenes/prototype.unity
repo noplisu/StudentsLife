@@ -614,6 +614,7 @@ GameObject:
   - 33: {fileID: 510617152}
   - 65: {fileID: 510617151}
   - 23: {fileID: 510617150}
+  - 114: {fileID: 510617154}
   m_Layer: 0
   m_Name: Microwave
   m_TagString: Untagged
@@ -672,6 +673,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 153666212}
   m_RootOrder: 4
+--- !u!114 &510617154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 510617149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad794677c737ebc4595370c806096c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedMaterial: {fileID: 0}
 --- !u!1 &614986630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,6 +1427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad794677c737ebc4595370c806096c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highlightedMaterial: {fileID: 2100000, guid: 7ecaf99ad4b2acc458efa33e7334bcf1, type: 2}
 --- !u!1 &1026935165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1977,6 +1991,7 @@ GameObject:
   - 65: {fileID: 1558807761}
   - 23: {fileID: 1558807760}
   - 54: {fileID: 1558807764}
+  - 114: {fileID: 1558807765}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -2050,6 +2065,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1558807765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1558807759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad794677c737ebc4595370c806096c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedMaterial: {fileID: 0}
 --- !u!1 &1579234742
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,6 +2089,7 @@ GameObject:
   - 65: {fileID: 1579234744}
   - 23: {fileID: 1579234743}
   - 54: {fileID: 1579234747}
+  - 114: {fileID: 1579234748}
   m_Layer: 0
   m_Name: Desk
   m_TagString: Untagged
@@ -2135,6 +2163,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1579234748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1579234742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad794677c737ebc4595370c806096c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedMaterial: {fileID: 0}
 --- !u!1 &1581313275
 GameObject:
   m_ObjectHideFlags: 0
@@ -2215,6 +2255,7 @@ GameObject:
   - 33: {fileID: 1659756148}
   - 65: {fileID: 1659756147}
   - 23: {fileID: 1659756146}
+  - 114: {fileID: 1659756150}
   m_Layer: 0
   m_Name: Fridge
   m_TagString: Untagged
@@ -2273,6 +2314,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 153666212}
   m_RootOrder: 2
+--- !u!114 &1659756150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1659756145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad794677c737ebc4595370c806096c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedMaterial: {fileID: 0}
 --- !u!1 &1667783362
 GameObject:
   m_ObjectHideFlags: 0
@@ -2703,6 +2756,7 @@ GameObject:
   - 33: {fileID: 2062591921}
   - 65: {fileID: 2062591920}
   - 23: {fileID: 2062591919}
+  - 114: {fileID: 2062591923}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -2761,6 +2815,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 751690906}
   m_RootOrder: 0
+--- !u!114 &2062591923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2062591918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad794677c737ebc4595370c806096c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedMaterial: {fileID: 0}
 --- !u!1 &2118091430
 GameObject:
   m_ObjectHideFlags: 0

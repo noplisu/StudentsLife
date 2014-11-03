@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ObjectInteraction : MonoBehaviour {
-
+public class ObjectInteraction : MonoBehaviour 
+{
 	GameObject player;
+	public Material highlightedMaterial;
+	private Material previousMaterial;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +26,18 @@ public class ObjectInteraction : MonoBehaviour {
 
 	public void Highlight()
 	{
-		print (gameObject);
+		previousMaterial = renderer.material; 
+
+		//Material mat = Resources.Load ("Active", typeof(Material)) as Material;	
+		//print (previousMaterial);
+
+		renderer.material = highlightedMaterial;
 	}
-}
+
+	public void RemoveHighlight()
+	{
+		renderer.material = previousMaterial;
+
+		previousMaterial = highlightedMaterial;
+	}
+} 

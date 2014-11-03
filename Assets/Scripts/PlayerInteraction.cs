@@ -2,8 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class PlayerInteraction : MonoBehaviour {
-
+public class PlayerInteraction : MonoBehaviour 
+{
 	ObjectInteraction[] interactions;
 	public float maxAngle = 60f;
 	public float maxDistance = 4.5f;
@@ -23,9 +23,7 @@ public class PlayerInteraction : MonoBehaviour {
 			float angle = Vector3.Angle(direction, transform.forward);
 			
 			if (angle < maxAngle)
-			{
 				facingObjects.Add(obj);
-			}
 		}	
 
 		if (facingObjects.Count > 0)
@@ -35,9 +33,7 @@ public class PlayerInteraction : MonoBehaviour {
 			foreach(ObjectInteraction obj in facingObjects) 
 			{
 				if (obj.Magnitude() < highlightedObject.Magnitude())
-				{
 					highlightedObject = obj;
-				}
 			}
 			
 			if (highlightedObject.Magnitude () < maxDistance)
