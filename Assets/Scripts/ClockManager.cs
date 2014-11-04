@@ -20,9 +20,9 @@ public class ClockManager : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		for (int i=0; i<clocks.Length; i++) 
+		foreach(Text clock in clocks) 
 		{
-			clocks[i].text = Time();
+			clock.text = Time();
 		}
 	}
 

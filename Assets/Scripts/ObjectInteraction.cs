@@ -4,11 +4,11 @@ using System.Collections;
 public class ObjectInteraction : MonoBehaviour 
 {
 	GameObject player;
-	public Material highlightedMaterial;
-	public Material material;
+    ObjectHighlighter[] children;
 
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
+        children = GetComponentsInChildren<ObjectHighlighter>();
 	}
 
 	void Update () { }
@@ -22,11 +22,13 @@ public class ObjectInteraction : MonoBehaviour
 
 	public void Highlight()
 	{
-		renderer.material = highlightedMaterial;
+        foreach(ObjectHighlighter o in children)
+		    o.Highlight();
 	}
 
 	public void RemoveHighlight()
 	{
-		renderer.material = material;
+        foreach (ObjectHighlighter o in children)
+            o.RemoveHighlight();
 	}
 } 
