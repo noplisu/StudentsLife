@@ -9,9 +9,11 @@ public class PlayerInteraction : MonoBehaviour
 	public float maxDistance = 4.5f;
 	ObjectInteraction highlighted;
 	bool anySelected;
+	Player player;
 	
 	void Start () {
 		interactions = FindObjectsOfType<ObjectInteraction> ();
+		player = GetComponent <Player> ();
 	}
 	
 	void FixedUpdate () 
@@ -32,6 +34,9 @@ public class PlayerInteraction : MonoBehaviour
 			{
 				anySelected = true;
 				selectObject(highlightedObject);
+				if (Input.GetKeyDown (KeyCode.E)) {	
+					highlightedObject.Use(player);
+				}
 			}
 		}
 
