@@ -4,6 +4,7 @@ using System.Collections;
 public class GuiController : MonoBehaviour {
 
 	Player player;
+	float sHour, sValue;
 
 	void Start () {
 		player = GetComponent <Player> ();
@@ -33,8 +34,25 @@ public class GuiController : MonoBehaviour {
 	{
 		player.changeMoney (value);	
 	}
+
+	//to bed you have to implement both methods sValue first, sHours secound
+	public void sleepValue(float value)
+	{
+		this.sValue = value;
+	}
+
+	public void sleepHours(float hour)
+	{
+		this.sHour = hour;
+		player.Sleep (sValue, sHour);
+	}
+
+	public void spendMoney(float value)
+	{
+		player.changeMoney (value);
+	}
 	
-	//wywołać w każdej
+	//use in every click...
 	public void timePassage(float hours){
 		player.timePassage (hours);
 	}
