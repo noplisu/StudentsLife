@@ -39,6 +39,11 @@ public class Player : MonoBehaviour {
 		studySlider.value = this.study;
 	}
 
+	public void Sleep(float value, float hours)
+	{
+		this.energy += value + (hours * perEnergy);
+	}
+
 	public void Change(ref float param, float value, ref Slider slider)
 	{
 		param += value;
