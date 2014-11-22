@@ -10,15 +10,24 @@ public class PlayerInteraction : MonoBehaviour
 	ObjectInteraction highlighted;
 	bool anySelected;
 	Player player;
+	public Canvas devCan;
 	
 	void Start () {
 		interactions = FindObjectsOfType<ObjectInteraction> ();
 		player = GetComponent <Player> ();
 	}
+
+	void Update()
+	{
+		if (Input.GetKeyDown (KeyCode.R)) {
+			devCan.gameObject.SetActive(!devCan.gameObject.activeSelf);		
+		}
+	}
 	
 	void FixedUpdate () 
 	{
 		anySelected = false;
+
 
 		if (getFacingObjects().Count > 0)
 		{
