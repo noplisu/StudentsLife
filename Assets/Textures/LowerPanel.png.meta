@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: ecb19869607245b4680c88443f3b777f
+guid: 3f5893daddfa57c4f97c4f0a74c94e6a
 TextureImporter:
   fileIDToRecycleName:
-    21300000: GUI
+    21300000: LowerPanel
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
