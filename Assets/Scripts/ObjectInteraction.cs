@@ -5,10 +5,12 @@ public class ObjectInteraction : MonoBehaviour
 {
 	GameObject player;
     ObjectHighlighter[] children;
+	Interactor interactor;
 
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
         children = GetComponentsInChildren<ObjectHighlighter>();
+		interactor = GetComponent<Interactor> ();
 	}
 
 	void Update () { }
@@ -24,11 +26,18 @@ public class ObjectInteraction : MonoBehaviour
 	{
         foreach(ObjectHighlighter o in children)
 		    o.Highlight();
+
 	}
 
 	public void RemoveHighlight()
 	{
         foreach (ObjectHighlighter o in children)
             o.RemoveHighlight();
+	}
+
+	public void Use(Player player)
+	{
+		print (player);
+		interactor.Use(player);
 	}
 } 
