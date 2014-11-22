@@ -21,16 +21,6 @@ public class TimeManager : MonoBehaviour {
 		hoursToSemesters = hoursToWeeks * weeksPerSemester;
 	}
 
-	void FixedUpdate()
-	{
-		_timer += Time.deltaTime;
-		if (_timer >= 1) 
-		{
-			_timer = 0;
-			SubstractHours(1f/60);
-		}
-	}
-
 	public float HoursRemaining()
 	{
 		return hours;

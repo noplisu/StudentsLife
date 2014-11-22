@@ -50,7 +50,7 @@ public class ClockManager : MonoBehaviour {
 		{
 			minutesString = minutes.ToString ();
 		}
-		return string.Format("{2} {0}:{1}", Hour(), minutesString, DayOfWeek());
+		return string.Format("{0}:{1}", Hour(), minutesString);
 	}
 
 	public string DayOfWeek()
