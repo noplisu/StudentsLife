@@ -5,9 +5,11 @@ public class GuiController : MonoBehaviour {
 
 	Player player;
 	float sHour, sValue;
+	TimeManager time;
 
 	void Start () {
 		player = GetComponent <Player> ();
+		time = FindObjectOfType<TimeManager> ();
 	}
 
 	public void energyControl(float value)
@@ -55,6 +57,7 @@ public class GuiController : MonoBehaviour {
 	//use in every click...
 	public void timePassage(float hours){
 		player.timePassage (hours);
+		time.hours -= hours;
 	}
 
 

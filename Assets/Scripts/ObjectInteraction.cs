@@ -37,7 +37,6 @@ public class ObjectInteraction : MonoBehaviour
 
 	public void Use(Player player)
 	{
-		print (player);
 		interactor.Use(player);
 	}
 } 

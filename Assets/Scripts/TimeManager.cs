@@ -12,8 +12,6 @@ public class TimeManager : MonoBehaviour {
 	float hoursToWeeks;
 	float hoursToSemesters;
 
-	float _timer;
-
 	void Start()
 	{
 		hoursToDays = 24f;

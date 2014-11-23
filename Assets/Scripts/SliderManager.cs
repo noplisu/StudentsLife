@@ -4,23 +4,24 @@ using UnityEngine.UI;
 
 public class SliderManager : MonoBehaviour {
 
-	private Color green, blue, yellow, red;
-	private Slider slider;
+	Color green, blue, yellow, red;
+	Slider slider;
+	Image img;
 
 	void Start () 
 	{
-		slider =  gameObject.GetComponent<Slider> ();
+		slider =  GetComponent<Slider> ();
+		img = slider.fillRect.GetComponent<Image>();
 		setColors ();
-		changeSliderColor (slider.value);
-		FindObjectOfType<Player> ().setStartSliders ();
+		float val = slider.value;
+		changeSliderColor (val);
+		FindObjectOfType<Player> ().setStartSliders();
 	}
 
 	public void OnValueChange(float val)
 	{
-		print ("On value changed");
-		print (val);
 		slider.value = val;
-		changeSliderColor (slider.value);
+		changeSliderColor (val);
 	}
 
 	private Color getColor(float param)
@@ -33,8 +34,7 @@ public class SliderManager : MonoBehaviour {
 	
 	private void changeSliderColor(float param)
 	{
-		Image img = slider.fillRect.GetComponent<Image>();
-		img.color = getColor (param);
+		if(slider) img.color = getColor (param);
 	}
 	
 	private Color parseColor(int r, int g, int b)
@@ -50,6 +50,6 @@ public class SliderManager : MonoBehaviour {
 		green = parseColor (64,126,41);
 		blue = parseColor (12, 56, 121);
 		yellow = parseColor (225,189,36);
-		red = parseColor (188,0,0); 
+		red = parseColor (188,0,0);
 	}
 }

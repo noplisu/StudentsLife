@@ -26,7 +26,7 @@ public class UniversityManager : MonoBehaviour {
 			player.ResetStudy ();
 			mark = getMark ();
 			marks [previousSemester - 1] = mark;
-			if (studyPass ()) previousSemester = semestr;{
+			if (studyPass ()){ previousSemester = semestr;
 				if(previousSemester = 7) Finish();
 			}
 			else  Fail();
