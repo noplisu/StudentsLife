@@ -11,16 +11,23 @@ public class PlayerInteraction : MonoBehaviour
 	bool anySelected;
 	Player player;
 	public Canvas devCan;
+	MouseManager mm;
 	
 	void Start () {
 		interactions = FindObjectsOfType<ObjectInteraction> ();
 		player = GetComponent <Player> ();
+		mm = FindObjectOfType<MouseManager>();
 	}
 
 	void Update()
 	{
 		if (Input.GetKeyDown (KeyCode.R)) {
-			devCan.gameObject.SetActive(!devCan.gameObject.activeSelf);		
+			print("RRRRRR");devCan.gameObject.SetActive(!devCan.gameObject.activeSelf);	
+			if(devCan.gameObject.activeSelf){
+				mm.Lock();
+			}else{
+				mm.Unlock();
+			}
 		}
 	}
 	
