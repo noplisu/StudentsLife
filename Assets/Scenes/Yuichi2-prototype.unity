@@ -3042,8 +3042,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4a9973da627d274ea315c1ab28796fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 8
   gameObject: {fileID: 0}
+  lvl: 0
+  multiplier: .0500000007
+  maxLvl: 3
 --- !u!1001 &294854231
 Prefab:
   m_ObjectHideFlags: 0
@@ -6105,6 +6107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 0}
+  lvl: 0
+  multiplier: .0500000007
+  maxLvl: 3
 --- !u!1 &706442974
 GameObject:
   m_ObjectHideFlags: 0
@@ -6963,6 +6968,7 @@ MonoBehaviour:
   perEnergy: 4
   perFood: 2
   perEntertainment: 4
+  currentCash: {fileID: 0}
 --- !u!114 &807175235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8455,8 +8461,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 708f68bff1b2f104f9c7b03c8ab6e19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clocks:
-  - {fileID: 904525722}
+  clock: {fileID: 0}
+  week: {fileID: 0}
+  weekNr: {fileID: 0}
+  semester: {fileID: 0}
 --- !u!114 &1018803607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8493,7 +8501,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 708f68bff1b2f104f9c7b03c8ab6e19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clocks: []
+  clock: {fileID: 0}
+  week: {fileID: 0}
+  weekNr: {fileID: 0}
+  semester: {fileID: 0}
 --- !u!1 &1042208097
 GameObject:
   m_ObjectHideFlags: 0
@@ -16366,6 +16377,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 0}
+  lvl: 0
+  multiplier: .0500000007
+  maxLvl: 3
 --- !u!1 &1933293099
 GameObject:
   m_ObjectHideFlags: 0

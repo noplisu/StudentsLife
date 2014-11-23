@@ -9,8 +9,7 @@ public class UniversityManager : MonoBehaviour {
 	int mark;
 	int[] marks;
 	public GameObject failScreen, successScreen;
-
-
+	
 	// Use this for initialization
 	void Start () {
 		marks = new int[7];
@@ -51,6 +50,13 @@ public class UniversityManager : MonoBehaviour {
 		if (study >= 70.0f) return 4;
 		if (study >= 90.0f) return 5;
 		return 2;
+	}
+
+	public float getValueForDay(float hours)
+	{
+		int sem = time.CurrentSemester () - 1;
+		float multiply = 1 / (1.0f + sem * 0.1f);
+		return hours * multiply;
 	}
 
 	public void Fail()
