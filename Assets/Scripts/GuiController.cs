@@ -34,7 +34,9 @@ public class GuiController : MonoBehaviour {
 
 	public void foodControl(float value)
 	{
-		player.Change (ref player.food, value * fridge.getMultiplier(),ref player.foodSlider);
+		if(player.cash >= value)
+			player.Change (ref player.food, value * fridge.getMultiplier() * 8,ref player.foodSlider);
+			player.cash -= value
 	}
 
 	public void entertainmentControl(float value)
