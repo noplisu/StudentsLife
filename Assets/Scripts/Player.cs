@@ -10,7 +10,7 @@ public class Player : MonoBehaviour {
 	public float perEnergy, perFood, perEntertainment;
 	private Color green, blue, yellow, red;
 	public Text currentCash;
-	
+
 	// Adding money to a player from: work, parents etc.
 	public void changeMoney(float money){
 		this.cash += money;

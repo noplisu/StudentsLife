@@ -20,8 +20,7 @@ public class SliderManager : MonoBehaviour {
 
 	public void OnValueChange(float val)
 	{
-		//print (slider);
-		//slider.value = val;
+		slider.value = val;
 		changeSliderColor (val);
 	}
 
