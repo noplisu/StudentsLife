@@ -10,25 +10,24 @@ public class PocketManager : MonoBehaviour {
 	int previousDayOfWeek;
 	int previousSemester;
 
-	int mark = 4;
+	public float workHours = 0;
+	public float moneyPerHour = 9;
 
 	// Use this for initialization
 	void Start () {
 		time = FindObjectOfType<TimeManager> ();
 		player = FindObjectOfType<Player> ();
 		previousDayOfWeek = time.DayOfWeek();
-		previousSemester = time.CurrentSemester();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		int dayOfWeek = time.DayOfWeek();
-		int semester = time.CurrentSemester();
-		if (previousDayOfWeek == 6 && dayOfWeek == 0)
+		if (previousDayOfWeek == 6 && dayOfWeek == 0) {
 			player.changeMoney (ParentMoney);
-		if (previousSemester < semester && mark >= 4)
-			player.changeMoney (mark * 100);
-		previousSemester = semester;
+			player.changeMoney (workHours * moneyPerHour);
+
+		}
 		previousDayOfWeek = dayOfWeek;
 	}
 }

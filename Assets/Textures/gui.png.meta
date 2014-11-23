@@ -3,6 +3,7 @@ guid: ecb19869607245b4680c88443f3b777f
 TextureImporter:
   fileIDToRecycleName:
     21300000: GUI
+    21300002: gui
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
