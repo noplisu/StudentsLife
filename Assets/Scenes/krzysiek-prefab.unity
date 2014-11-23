@@ -339,7 +339,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  - {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -367,8 +367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db4751c53e73dc4a923b34591ebc407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightedMaterial: {fileID: 2100000, guid: 7ecaf99ad4b2acc458efa33e7334bcf1, type: 2}
-  material: {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  highlightedMaterial: {fileID: 2100000, guid: 2e63dd6ac7aa5284fa8aa6b8b8c59c51, type: 2}
+  material: {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
 --- !u!1 &34572324
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +794,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  - {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -822,8 +822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db4751c53e73dc4a923b34591ebc407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightedMaterial: {fileID: 2100000, guid: 7ecaf99ad4b2acc458efa33e7334bcf1, type: 2}
-  material: {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  highlightedMaterial: {fileID: 2100000, guid: 2e63dd6ac7aa5284fa8aa6b8b8c59c51, type: 2}
+  material: {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
 --- !u!1 &66032368
 GameObject:
   m_ObjectHideFlags: 0
@@ -2256,7 +2256,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  - {fileID: 2100000, guid: 03f7dd024989c5d4f9f273c99ae03ecd, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2284,8 +2284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db4751c53e73dc4a923b34591ebc407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightedMaterial: {fileID: 2100000, guid: 7ecaf99ad4b2acc458efa33e7334bcf1, type: 2}
-  material: {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  highlightedMaterial: {fileID: 2100000, guid: a44695546a2a86e4bbf9102e982fbb6b, type: 2}
+  material: {fileID: 2100000, guid: 03f7dd024989c5d4f9f273c99ae03ecd, type: 2}
 --- !u!1 &236971800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,7 +2387,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  - {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2415,8 +2415,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db4751c53e73dc4a923b34591ebc407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightedMaterial: {fileID: 2100000, guid: 7ecaf99ad4b2acc458efa33e7334bcf1, type: 2}
-  material: {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  highlightedMaterial: {fileID: 2100000, guid: 2e63dd6ac7aa5284fa8aa6b8b8c59c51, type: 2}
+  material: {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
 --- !u!1 &238324054
 GameObject:
   m_ObjectHideFlags: 0
@@ -2931,7 +2931,6 @@ GameObject:
   - 4: {fileID: 285957079}
   - 114: {fileID: 285957080}
   - 114: {fileID: 285957081}
-  - 54: {fileID: 285957083}
   - 65: {fileID: 285957082}
   m_Layer: 0
   m_Name: Bed
@@ -2978,6 +2977,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 357602056}
+  lvl: 0
+  multiplier: .0500000007
+  maxLvl: 3
 --- !u!65 &285957082
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2991,22 +2993,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &285957083
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5400000, guid: fe776fc3081897043b788e8fa6df2552,
-    type: 2}
-  m_PrefabInternal: {fileID: 1353354669}
-  m_GameObject: {fileID: 285957078}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &294981727
 Prefab:
   m_ObjectHideFlags: 0
@@ -6414,6 +6400,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 780296847}
+  lvl: 0
+  multiplier: .0500000007
+  maxLvl: 3
 --- !u!65 &702590735
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9587,7 +9576,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  - {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -9615,8 +9604,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db4751c53e73dc4a923b34591ebc407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightedMaterial: {fileID: 2100000, guid: 7ecaf99ad4b2acc458efa33e7334bcf1, type: 2}
-  material: {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  highlightedMaterial: {fileID: 2100000, guid: 2e63dd6ac7aa5284fa8aa6b8b8c59c51, type: 2}
+  material: {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
 --- !u!1 &1085583857
 GameObject:
   m_ObjectHideFlags: 0
@@ -11430,7 +11419,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  - {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -11458,8 +11447,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db4751c53e73dc4a923b34591ebc407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightedMaterial: {fileID: 2100000, guid: 7ecaf99ad4b2acc458efa33e7334bcf1, type: 2}
-  material: {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  highlightedMaterial: {fileID: 2100000, guid: 2e63dd6ac7aa5284fa8aa6b8b8c59c51, type: 2}
+  material: {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
 --- !u!1 &1183006074
 GameObject:
   m_ObjectHideFlags: 0
@@ -13375,7 +13364,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  - {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -13403,8 +13392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db4751c53e73dc4a923b34591ebc407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightedMaterial: {fileID: 2100000, guid: 7ecaf99ad4b2acc458efa33e7334bcf1, type: 2}
-  material: {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  highlightedMaterial: {fileID: 2100000, guid: 2e63dd6ac7aa5284fa8aa6b8b8c59c51, type: 2}
+  material: {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
 --- !u!1 &1350213469
 GameObject:
   m_ObjectHideFlags: 0
@@ -20059,6 +20048,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 117286369}
+  lvl: 0
+  multiplier: .0500000007
+  maxLvl: 3
 --- !u!65 &1928340910
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20607,7 +20599,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  - {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -20635,8 +20627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db4751c53e73dc4a923b34591ebc407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightedMaterial: {fileID: 2100000, guid: 7ecaf99ad4b2acc458efa33e7334bcf1, type: 2}
-  material: {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  highlightedMaterial: {fileID: 2100000, guid: 2e63dd6ac7aa5284fa8aa6b8b8c59c51, type: 2}
+  material: {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
 --- !u!1 &2009646594
 GameObject:
   m_ObjectHideFlags: 0
@@ -21658,7 +21650,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  - {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -21686,8 +21678,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db4751c53e73dc4a923b34591ebc407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightedMaterial: {fileID: 2100000, guid: 7ecaf99ad4b2acc458efa33e7334bcf1, type: 2}
-  material: {fileID: 2100000, guid: 1ed5d62bf29bcce4aa568c6deac78086, type: 2}
+  highlightedMaterial: {fileID: 2100000, guid: 2e63dd6ac7aa5284fa8aa6b8b8c59c51, type: 2}
+  material: {fileID: 2100000, guid: 80e461515c450c5489281cf5e1ab59eb, type: 2}
 --- !u!1 &2137683630
 GameObject:
   m_ObjectHideFlags: 0
