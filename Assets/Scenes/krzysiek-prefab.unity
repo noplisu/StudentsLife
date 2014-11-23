@@ -3014,6 +3014,14 @@ Prefab:
       propertyPath: week
       value: 
       objectReference: {fileID: 1728262584}
+    - target: {fileID: 11400002, guid: 26888dc83f793a24a9f48f001409fd29, type: 2}
+      propertyPath: weekNr
+      value: 
+      objectReference: {fileID: 1924284507}
+    - target: {fileID: 11400002, guid: 26888dc83f793a24a9f48f001409fd29, type: 2}
+      propertyPath: semester
+      value: 
+      objectReference: {fileID: 248629771}
     m_RemovedComponents:
     - {fileID: 11400004, guid: 26888dc83f793a24a9f48f001409fd29, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 26888dc83f793a24a9f48f001409fd29, type: 2}
@@ -6306,7 +6314,55 @@ MonoBehaviour:
   m_Interactable: 1
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 807175235}
+        m_MethodName: sleepValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 12.5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
+      - m_Target: {fileID: 807175235}
+        m_MethodName: sleepHours
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
+      - m_Target: {fileID: 357602060}
+        m_MethodName: Hide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
+      - m_Target: {fileID: 807175235}
+        m_MethodName: timePassage
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &712124384
@@ -7225,6 +7281,7 @@ GameObject:
   - 114: {fileID: 807175233}
   - 114: {fileID: 807175234}
   - 114: {fileID: 807175235}
+  - 114: {fileID: 807175236}
   m_Layer: 0
   m_Name: Pivot
   m_TagString: Untagged
@@ -7282,6 +7339,7 @@ MonoBehaviour:
   perEnergy: 0
   perFood: 0
   perEntertainment: 0
+  currentCash: {fileID: 793717595}
 --- !u!114 &807175235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7291,6 +7349,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a96982bca25a2474d895443dbd438d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &807175236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 807175231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0271567af311ae54282183317fb4196b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &816877039
@@ -8743,6 +8812,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clock: {fileID: 1658667905}
   week: {fileID: 1728262584}
+  weekNr: {fileID: 1924284507}
+  semester: {fileID: 248629771}
 --- !u!114 &1018803607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10526,8 +10597,8 @@ GameObject:
   - 224: {fileID: 1175617259}
   - 222: {fileID: 1175617263}
   - 114: {fileID: 1175617262}
-  - 114: {fileID: 1175617261}
   - 114: {fileID: 1175617260}
+  - 114: {fileID: 1175617261}
   m_Layer: 5
   m_Name: StudyProgressBar
   m_TagString: Untagged
@@ -10616,7 +10687,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1175617260}
         m_MethodName: OnValueChange
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
@@ -11248,8 +11319,8 @@ GameObject:
   - 224: {fileID: 1206739587}
   - 222: {fileID: 1206739591}
   - 114: {fileID: 1206739590}
-  - 114: {fileID: 1206739589}
   - 114: {fileID: 1206739588}
+  - 114: {fileID: 1206739589}
   m_Layer: 5
   m_Name: EnergyProgressBar
   m_TagString: Untagged
@@ -11332,13 +11403,13 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: .476847619
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1206739588}
         m_MethodName: OnValueChange
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
@@ -13630,8 +13701,8 @@ GameObject:
   - 224: {fileID: 1439573065}
   - 222: {fileID: 1439573069}
   - 114: {fileID: 1439573068}
-  - 114: {fileID: 1439573067}
   - 114: {fileID: 1439573066}
+  - 114: {fileID: 1439573067}
   m_Layer: 5
   m_Name: EntertainmentProgressBar
   m_TagString: Untagged
@@ -13720,7 +13791,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1439573066}
         m_MethodName: OnValueChange
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
@@ -13873,7 +13944,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_Enabled: 0
+        m_Enabled: 1
       - m_Target: {fileID: 807175235}
         m_MethodName: timePassage
         m_Mode: 4
@@ -15652,7 +15723,55 @@ MonoBehaviour:
   m_Interactable: 1
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 807175235}
+        m_MethodName: sleepValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 37.5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
+      - m_Target: {fileID: 807175235}
+        m_MethodName: sleepHours
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 3
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
+      - m_Target: {fileID: 357602060}
+        m_MethodName: Hide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
+      - m_Target: {fileID: 807175235}
+        m_MethodName: timePassage
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 3
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1617006011
@@ -16774,7 +16893,55 @@ MonoBehaviour:
   m_Interactable: 1
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 807175235}
+        m_MethodName: sleepValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 100
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
+      - m_Target: {fileID: 807175235}
+        m_MethodName: sleepHours
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 8
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
+      - m_Target: {fileID: 357602060}
+        m_MethodName: Hide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
+      - m_Target: {fileID: 807175235}
+        m_MethodName: timePassage
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 8
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1742008361
@@ -19350,8 +19517,8 @@ GameObject:
   - 224: {fileID: 1986893067}
   - 222: {fileID: 1986893071}
   - 114: {fileID: 1986893070}
-  - 114: {fileID: 1986893069}
   - 114: {fileID: 1986893068}
+  - 114: {fileID: 1986893069}
   m_Layer: 5
   m_Name: FoodProgressBar
   m_TagString: Untagged
@@ -19440,7 +19607,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1986893068}
         m_MethodName: OnValueChange
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
