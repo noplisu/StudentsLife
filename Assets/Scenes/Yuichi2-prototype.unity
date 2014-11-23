@@ -210,7 +210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &32127117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3426,6 +3426,7 @@ Transform:
   m_Children:
   - {fileID: 1018803605}
   - {fileID: 2137683631}
+  - {fileID: 381293577}
   m_Father: {fileID: 0}
   m_RootOrder: 3
 --- !u!1 &347163594
@@ -3856,6 +3857,46 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 373571862}
   m_Mesh: {fileID: 4300274, guid: d0fce644de0fced41b76a3de3fb8eb0e, type: 3}
+--- !u!1 &381293575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 381293577}
+  - 114: {fileID: 381293576}
+  m_Layer: 0
+  m_Name: MouseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &381293576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 381293575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3edb766ff84e0114c9506a819dffeb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 221269048}
+--- !u!4 &381293577
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 381293575}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 333646454}
+  m_RootOrder: 2
 --- !u!1 &386281261
 GameObject:
   m_ObjectHideFlags: 0
@@ -11156,6 +11197,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 1fc0c6ca477bb5142afaab61b72fccb2, type: 2}
       propertyPath: clipMoveTime
       value: .00499999989
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 1fc0c6ca477bb5142afaab61b72fccb2, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 1fc0c6ca477bb5142afaab61b72fccb2, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fc0c6ca477bb5142afaab61b72fccb2, type: 2}
