@@ -12,10 +12,12 @@ public class SliderManager : MonoBehaviour {
 		slider =  gameObject.GetComponent<Slider> ();
 		setColors ();
 		changeSliderColor (slider.value);
+		FindObjectOfType<Player> ().setStartSliders ();
 	}
 
 	public void OnValueChange(float val)
 	{
+		print ("On value changed");
 		print (val);
 		slider.value = val;
 		changeSliderColor (slider.value);

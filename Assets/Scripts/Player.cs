@@ -10,9 +10,7 @@ public class Player : MonoBehaviour {
 	public float perEnergy, perFood, perEntertainment;
 	private Color green, blue, yellow, red;
 
-	void Start () {
-		setStartSliders ();
-	}
+
 
 	// Adding money to a player from: work, parents etc.
 	public void changeMoney(float money){
@@ -62,7 +60,7 @@ public class Player : MonoBehaviour {
 		return value / 100.0f;
 	}
 
-	private void setStartSliders()
+	public void setStartSliders()
 	{
 		energySlider.value = percentValue (this.energy);
 		foodSlider.value = percentValue (this.food);
