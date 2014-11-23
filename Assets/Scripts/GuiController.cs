@@ -10,6 +10,7 @@ public class GuiController : MonoBehaviour {
 	Desk desk;
 	Bed bed;
 	Fridge fridge;
+	PocketManager pManager;
 
 	void Start () {
 		player = GetComponent <Player> ();
@@ -18,6 +19,12 @@ public class GuiController : MonoBehaviour {
 		desk = FindObjectOfType<Desk> ();
 		bed = FindObjectOfType<Bed> ();
 		fridge = FindObjectOfType<Fridge> ();
+		pManager = FindObjectOfType<PocketManager> ();
+	}
+
+	public void workContorll(float value)
+	{
+		pManager.workHours += value;
 	}
 
 	public void energyControl(float value)

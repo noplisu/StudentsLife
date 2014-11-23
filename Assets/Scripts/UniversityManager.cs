@@ -6,9 +6,9 @@ public class UniversityManager : MonoBehaviour {
 	TimeManager time;
 	int previousSemester, semestr;
 	Player player;
+	WinLoseManager wlManager;
 	int mark;
 	int[] marks;
-	public GameObject failScreen, successScreen;
 	
 	// Use this for initialization
 	void Start () {
@@ -16,6 +16,7 @@ public class UniversityManager : MonoBehaviour {
 		time = FindObjectOfType<TimeManager> ();
 		previousSemester = time.CurrentSemester();
 		player = FindObjectOfType<Player> ();
+		wlManager = FindObjectOfType<WinLoseManager> ();
 	}
 	
 	void FixUpdate()
@@ -61,12 +62,12 @@ public class UniversityManager : MonoBehaviour {
 
 	public void Fail()
 	{
-		if (failScreen != null) failScreen.SetActive (true);
+		wlManager.Fail ();
 	}
 
 	public void Finish()
 	{
-		if (successScreen != null) successScreen.SetActive (true);
+		wlManager.Win ();
 	}
 
 	

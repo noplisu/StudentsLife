@@ -10,6 +10,7 @@ public class Desk : Interactor {
 	
 	public override void Use(Player player){
 		if(gameObject != null) gameObject.SetActive (true);
+		Time.timeScale = 0.00000000001f;
 	}
 
 	public float getMultiplier()
