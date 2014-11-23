@@ -6,12 +6,15 @@ public class ClockManager : MonoBehaviour {
 
 	TimeManager time;
 
-	string[] Days = { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" };
+	string[] Days = { "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela" };
 
 	int startHour = 0;
 	int startMinute = 0;
 
-	public Text[] clocks;
+	public Text clock;
+	public Text week;
+	public Text weekNr;
+	public Text semester;
 
 	void Start()
 	{
@@ -20,10 +23,10 @@ public class ClockManager : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		foreach(Text clock in clocks) 
-		{
-			clock.text = Time();
-		}
+		clock.text = Time();
+		week.text = DayOfWeek ();
+		weekNr.text = time.CurrentWeek ().ToString();
+		semester.text = time.CurrentSemester ().ToString ();
 	}
 
 	public int Hour()

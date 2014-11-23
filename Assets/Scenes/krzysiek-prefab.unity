@@ -2074,7 +2074,6 @@ GameObject:
   - 114: {fileID: 221269052}
   - 114: {fileID: 221269051}
   - 95: {fileID: 221269050}
-  - 114: {fileID: 221269056}
   m_Layer: 9
   m_Name: Student
   m_TagString: Player
@@ -2197,29 +2196,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1292842447}
   m_GameObject: {fileID: 221269048}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &221269056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 221269048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c02fb4117cd6e5a47bd0d68730f7d356, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  energySlider: {fileID: 0}
-  foodSlider: {fileID: 0}
-  studySlider: {fileID: 0}
-  entertainmentSlider: {fileID: 0}
-  cash: 0
-  energy: 0
-  food: 0
-  study: 0
-  entertainment: 0
-  perEnergy: 0
-  perFood: 0
-  perEntertainment: 0
 --- !u!1 &228618033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2887,6 +2863,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 285957079}
   - 114: {fileID: 285957080}
+  - 114: {fileID: 285957081}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -2918,6 +2895,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad794677c737ebc4595370c806096c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &285957081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 285957078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a9973da627d274ea315c1ab28796fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 357602056}
 --- !u!1001 &294854231
 Prefab:
   m_ObjectHideFlags: 0
@@ -3016,8 +3005,17 @@ Prefab:
     - target: {fileID: 11400002, guid: 26888dc83f793a24a9f48f001409fd29, type: 2}
       propertyPath: clocks.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+      objectReference: {fileID: 1658667905}
+    - target: {fileID: 11400002, guid: 26888dc83f793a24a9f48f001409fd29, type: 2}
+      propertyPath: clock
+      value: 
+      objectReference: {fileID: 1658667905}
+    - target: {fileID: 11400002, guid: 26888dc83f793a24a9f48f001409fd29, type: 2}
+      propertyPath: week
+      value: 
+      objectReference: {fileID: 1728262584}
+    m_RemovedComponents:
+    - {fileID: 11400004, guid: 26888dc83f793a24a9f48f001409fd29, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 26888dc83f793a24a9f48f001409fd29, type: 2}
   m_RootGameObject: {fileID: 1018803604}
   m_IsPrefabParent: 0
@@ -3548,6 +3546,7 @@ GameObject:
   - 224: {fileID: 357602057}
   - 222: {fileID: 357602059}
   - 114: {fileID: 357602058}
+  - 114: {fileID: 357602060}
   m_Layer: 5
   m_Name: SleepMenu
   m_TagString: Untagged
@@ -3607,6 +3606,17 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 357602056}
+--- !u!114 &357602060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 357602056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f676aaca2d28b854381b69801ef54dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &369167064
 GameObject:
   m_ObjectHideFlags: 0
@@ -6909,7 +6919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &780296848
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7214,6 +7224,7 @@ GameObject:
   - 4: {fileID: 807175232}
   - 114: {fileID: 807175233}
   - 114: {fileID: 807175234}
+  - 114: {fileID: 807175235}
   m_Layer: 0
   m_Name: Pivot
   m_TagString: Untagged
@@ -7271,6 +7282,17 @@ MonoBehaviour:
   perEnergy: 0
   perFood: 0
   perEntertainment: 0
+--- !u!114 &807175235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 807175231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96982bca25a2474d895443dbd438d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &816877039
 GameObject:
   m_ObjectHideFlags: 0
@@ -8685,7 +8707,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1018803605}
-  - 114: {fileID: 1018803609}
   - 222: {fileID: 1018803608}
   - 114: {fileID: 1018803607}
   - 114: {fileID: 1018803606}
@@ -8720,8 +8741,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 708f68bff1b2f104f9c7b03c8ab6e19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clocks:
-  - {fileID: 0}
+  clock: {fileID: 1658667905}
+  week: {fileID: 1728262584}
 --- !u!114 &1018803607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8745,19 +8766,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 294981727}
   m_GameObject: {fileID: 1018803604}
---- !u!114 &1018803609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: 26888dc83f793a24a9f48f001409fd29,
-    type: 2}
-  m_PrefabInternal: {fileID: 294981727}
-  m_GameObject: {fileID: 1018803604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 708f68bff1b2f104f9c7b03c8ab6e19c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clocks: []
 --- !u!1 &1042208097
 GameObject:
   m_ObjectHideFlags: 0
@@ -10605,7 +10613,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1175617260}
+        m_MethodName: OnValueChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1175617262
@@ -11315,7 +11335,19 @@ MonoBehaviour:
   m_Value: .476847619
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1206739588}
+        m_MethodName: OnValueChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1206739590
@@ -11728,7 +11760,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Par\xF3wki (5 z\u0142)"
+  m_Text: "Par\xF3wki (6 z\u0142)"
 --- !u!222 &1236695152
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13685,7 +13717,19 @@ MonoBehaviour:
   m_Value: .899999976
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1439573066}
+        m_MethodName: OnValueChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1439573068
@@ -13793,7 +13837,55 @@ MonoBehaviour:
   m_Interactable: 1
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 807175235}
+        m_MethodName: sleepValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 62.5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
+      - m_Target: {fileID: 807175235}
+        m_MethodName: sleepHours
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
+      - m_Target: {fileID: 357602060}
+        m_MethodName: Hide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 0
+      - m_Target: {fileID: 807175235}
+        m_MethodName: timePassage
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1440423287
@@ -13971,7 +14063,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Pierogi  (7 z\u0142)\n"
+  m_Text: "Pierogi  (12 z\u0142)\n"
 --- !u!222 &1447685595
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17763,7 +17855,19 @@ MonoBehaviour:
   m_Interactable: 1
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 357602060}
+        m_MethodName: Hide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1828351106
@@ -19330,10 +19434,22 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: .82138294
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1986893068}
+        m_MethodName: OnValueChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1986893070
@@ -20531,7 +20647,7 @@ MonoBehaviour:
   midday: {fileID: 2100000, guid: 93d43b027dc267444af7412b8e607dbd, type: 2}
   sunset: {fileID: 2100000, guid: 13fde35df00f2384598d84d32a7bacd8, type: 2}
   night: {fileID: 2100000, guid: d07d2172e76d3fa429e80a14d2ae3616, type: 2}
-  clock: {fileID: 1018803609}
+  clock: {fileID: 1018803606}
   morningColor: {r: .796000004, g: .783999979, b: .755999982, a: .728999972}
   dayColor: {r: .791999996, g: .776000023, b: .630999982, a: .670000017}
   middayColor: {r: .796000004, g: .783999979, b: .755999982, a: .728999972}

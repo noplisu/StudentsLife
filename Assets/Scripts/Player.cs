@@ -9,14 +9,12 @@ public class Player : MonoBehaviour {
 	public float energy, food, study, entertainment;
 	public float perEnergy, perFood, perEntertainment;
 	private Color green, blue, yellow, red;
-
-	void Start () {
-		setStartSliders ();
-	}
-
+	public Text currentCash;
+	
 	// Adding money to a player from: work, parents etc.
 	public void changeMoney(float money){
 		this.cash += money;
+		currentCash.text = this.cash.ToString ();
 	}
 
 	//przy każdym przesunięciu czasu należy to wywoływać
@@ -42,6 +40,7 @@ public class Player : MonoBehaviour {
 	public void Sleep(float value, float hours)
 	{
 		this.energy += value + (hours * perEnergy);
+		energySlider.value = percentValue(this.energy);
 	}
 
 	public void Change(ref float param, float value, ref Slider slider)
@@ -62,11 +61,12 @@ public class Player : MonoBehaviour {
 		return value / 100.0f;
 	}
 
-	private void setStartSliders()
+	public void setStartSliders()
 	{
 		energySlider.value = percentValue (this.energy);
 		foodSlider.value = percentValue (this.food);
 		entertainmentSlider.value = percentValue (this.entertainment);
 		studySlider.value = percentValue (this.study);
+		currentCash.text = this.cash.ToString() + " zł";
 	}
 }
