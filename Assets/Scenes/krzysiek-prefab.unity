@@ -8177,6 +8177,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 807175235}
+    - target: {fileID: 100172, guid: ded09ec41eda5e946bdca1f97aee0bab, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ded09ec41eda5e946bdca1f97aee0bab, type: 2}
   m_RootGameObject: {fileID: 793938122}
