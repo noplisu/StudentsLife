@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
 	public float perEnergy, perFood, perEntertainment;
 	private Color green, blue, yellow, red;
 	public Text currentCash;
+	WinLoseManager wlManager;
 
 	// Adding money to a player from: work, parents etc.
 	public void changeMoney(float money){
@@ -22,6 +23,7 @@ public class Player : MonoBehaviour {
 		this.energy = needPassage (this.energy, hours, perEnergy, energySlider);
 		this.food = needPassage (this.food, hours, perFood, foodSlider);
 		this.entertainment = needPassage (this.entertainment, hours, perEntertainment, entertainmentSlider);
+		checkLose ();
 	}
 
 	private float needPassage(float param, float hours, float percent, Slider slider)
@@ -59,6 +61,14 @@ public class Player : MonoBehaviour {
 	private float percentValue(float value)
 	{
 		return value / 100.0f;
+	}
+
+	private void checkLose()
+	{
+		if (food <= 0) {
+			wlManager = FindObjectOfType<WinLoseManager> ();
+			wlManager.Fail();
+		}
 	}
 
 	public void setStartSliders()

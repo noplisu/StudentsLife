@@ -10,6 +10,7 @@ public class Fridge : Interactor {
 	public override void Use(Player player){
 		print ("Fridge");
 		if(gameObject != null) gameObject.SetActive (true);
+		Time.timeScale = 0.00000000001f;
 	}
 
 	public float getMultiplier()

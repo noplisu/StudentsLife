@@ -8,5 +8,6 @@ public class Door : Interactor {
 	public override void Use(Player player){
 		print ("Door");
 		if(gameObject != null) gameObject.SetActive (true);
+		Time.timeScale = 0.00000000001f;
 	}
 }

@@ -26,7 +26,7 @@ public class PocketManager : MonoBehaviour {
 		if (previousDayOfWeek == 6 && dayOfWeek == 0) {
 			player.changeMoney (ParentMoney);
 			player.changeMoney (workHours * moneyPerHour);
-
+			workHours = 0;
 		}
 		previousDayOfWeek = dayOfWeek;
 	}
