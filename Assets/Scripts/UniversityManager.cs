@@ -27,7 +27,7 @@ public class UniversityManager : MonoBehaviour {
 			mark = getMark ();
 			marks [previousSemester - 1] = mark;
 			if (studyPass ()){ previousSemester = semestr;
-				if(previousSemester = 7) Finish();
+				if(previousSemester == 7) Finish();
 			}
 			else  Fail();
 		}
@@ -50,6 +50,7 @@ public class UniversityManager : MonoBehaviour {
 		if (study >= 50.0f) return 3;
 		if (study >= 70.0f) return 4;
 		if (study >= 90.0f) return 5;
+		return 2;
 	}
 
 	public void Fail()
