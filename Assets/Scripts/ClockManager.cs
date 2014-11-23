@@ -8,8 +8,10 @@ public class ClockManager : MonoBehaviour {
 
 	string[] Days = { "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela" };
 
-	int startHour = 0;
-	int startMinute = 0;
+	int startHour = 6;
+	int startMinute = 30;
+	int startDayOfWeek = 5;
+	float total_time;
 
 	public Text clock;
 	public Text week;
@@ -19,6 +21,7 @@ public class ClockManager : MonoBehaviour {
 	void Start()
 	{
 		time = GetComponent<TimeManager> ();
+		total_time = time.HoursRemaining();
 	}
 
 	void FixedUpdate()
@@ -31,33 +34,31 @@ public class ClockManager : MonoBehaviour {
 
 	public int Hour()
 	{
-		return 23 - Mathf.FloorToInt (time.HoursRemaining() % 24);
+		float hoursPassed = total_time - time.HoursRemaining ();
+		return Mathf.FloorToInt ((startHour + hoursPassed) % 24);
 	}
 
 	public int Minutes()
 	{
-		float hours = time.HoursRemaining ();
-		float hourFraction = hours - Mathf.Floor(hours);
-		return 59 - Mathf.FloorToInt (hourFraction * 60);
+		float hoursPassed = total_time - time.HoursRemaining ();
+		float hourFraction = startMinute + (hoursPassed - Mathf.Floor(hoursPassed)) * 60;
+		return Mathf.FloorToInt (hourFraction % 60);
 	}
 
 	public string Time()
 	{
 		float minutes = Minutes();
-		string minutesString;
+		string minutesString = "";
 		if (minutes < 10) 
 		{
-			minutesString = "0" + minutes.ToString ();
+			minutesString += "0";
 		}
-		else 
-		{
-			minutesString = minutes.ToString ();
-		}
+		minutesString += minutes.ToString ();
 		return string.Format("{0}:{1}", Hour(), minutesString);
 	}
 
 	public string DayOfWeek()
 	{
-		return Days[time.DayOfWeek()];
+		return Days[(startDayOfWeek + time.DayOfWeek()) % 7];
 	}
 }
