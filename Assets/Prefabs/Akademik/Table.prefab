@@ -201,7 +201,7 @@ MeshFilter:
   m_Mesh: {fileID: 4300002, guid: d0fce644de0fced41b76a3de3fb8eb0e, type: 3}
 --- !u!65 &6500000
 BoxCollider:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}

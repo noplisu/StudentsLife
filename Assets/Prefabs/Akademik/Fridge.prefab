@@ -350,7 +350,7 @@ MeshFilter:
   m_Mesh: {fileID: 4300050, guid: d0fce644de0fced41b76a3de3fb8eb0e, type: 3}
 --- !u!65 &6500000
 BoxCollider:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
@@ -383,6 +383,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 0}
+  lvl: 0
+  multiplier: .0500000007
+  maxLvl: 3
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
