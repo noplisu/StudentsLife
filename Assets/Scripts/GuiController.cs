@@ -6,20 +6,28 @@ public class GuiController : MonoBehaviour {
 	Player player;
 	float sHour, sValue;
 	TimeManager time;
+	UniversityManager uMan;
+	Desk desk;
+	Bed bed;
+	Fridge fridge;
 
 	void Start () {
 		player = GetComponent <Player> ();
 		time = FindObjectOfType<TimeManager> ();
+		uMan = FindObjectOfType<UniversityManager> ();
+		desk = FindObjectOfType<Desk> ();
+		bed = FindObjectOfType<Bed> ();
+		fridge = FindObjectOfType<Fridge> ();
 	}
 
 	public void energyControl(float value)
 	{
-		player.Change (ref player.energy, value,ref player.energySlider); 
+		player.Change (ref player.energy, value * bed.getMultiplier(),ref player.energySlider); 
 	}
 
 	public void foodControl(float value)
 	{
-		player.Change (ref player.food, value,ref player.foodSlider);
+		player.Change (ref player.food, value * fridge.getMultiplier(),ref player.foodSlider);
 	}
 
 	public void entertainmentControl(float value)
@@ -27,9 +35,16 @@ public class GuiController : MonoBehaviour {
 		player.Change (ref player.entertainment, value, ref player.entertainmentSlider);
 	}
 
-	public void studyControl(float value)
+	// for university
+	public void universityControl(float value)
 	{
-		player.Change (ref player.study, value, ref player.studySlider);
+		player.Change (ref player.study, uMan.getValueForDay(value), ref player.studySlider);
+	}
+
+	// desk study
+	public void studyContol(float value)
+	{
+		player.Change (ref player.study, value * desk.getMultiplier (), ref player.studySlider);
 	}
 
 	public void moneyControl(float value)
@@ -40,7 +55,7 @@ public class GuiController : MonoBehaviour {
 	//to bed you have to implement both methods sValue first, sHours secound
 	public void sleepValue(float value)
 	{
-		this.sValue = value;
+		this.sValue = value * bed.getMultiplier();
 	}
 
 	public void sleepHours(float hour)
@@ -54,7 +69,6 @@ public class GuiController : MonoBehaviour {
 		player.changeMoney (value);
 	}
 	
-	//use in every click...
 	public void timePassage(float hours){
 		player.timePassage (hours);
 		time.hours -= hours;
