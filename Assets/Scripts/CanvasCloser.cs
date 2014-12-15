@@ -13,5 +13,6 @@ public class CanvasCloser : MonoBehaviour {
 	public void Hide()
 	{
 		gameO.SetActive (false);
+        Time.timeScale = 1.0f;
 	}
 }
