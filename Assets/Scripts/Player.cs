@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+[System.Serializable]
 
 public class Player : MonoBehaviour {
 
+	public static Player current;
 	public Slider energySlider, foodSlider, studySlider, entertainmentSlider;
 	public float cash;
 	public float energy, food, study, entertainment;

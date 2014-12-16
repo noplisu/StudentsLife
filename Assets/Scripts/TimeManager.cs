@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+[System.Serializable]
 
 public class TimeManager : MonoBehaviour {
+	public static TimeManager current;
 	public int Semesters = 7;
 	public int weeksPerSemester = 3;
 	public int daysPerWeek = 7;
