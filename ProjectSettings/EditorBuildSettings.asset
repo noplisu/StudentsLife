@@ -55,3 +55,5 @@ EditorBuildSettings:
     path: Assets/Scenes/krzysiek-prefab.unity
   - enabled: 1
     path: Assets/Scenes/Yuichi2-prototype.unity
+  - enabled: 1
+    path: Assets/Scenes/krzysiek-prefab.unity
